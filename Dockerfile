@@ -5,7 +5,7 @@ LABEL "maintainer"="Heston Snodgrass heston.snodgrass@connexta.com"
 ENV JENKINS_HOME /jenkins
 
 RUN apt-get update \
-    && apt-get install yamllint
+    && apt-get install -y yamllint
 
 COPY scripts/entrypoint.sh /
 
